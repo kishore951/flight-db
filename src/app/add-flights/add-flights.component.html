@@ -5,22 +5,22 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Flight Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="name">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Origin</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="origin" [(ngModel)]="origin">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Destination</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="destination" [(ngModel)]="destination">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
                     <label for="" class="form-label">Capacity</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="capacity" [(ngModel)]="capacity">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
                 </div>
             </div>
         </div>
